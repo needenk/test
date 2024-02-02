@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="test" type="testType"/>
+<xs:complexType name="testType">
+    <xs:sequence>
+        <xs:element name="testing" type="xs:string"/>   
+        <xs:element name="nestedTest" type="nestedTestType"/>
+        <xs:complexType name="nestedTestType">
+            <xs:sequence>
+                <xs:element name="test1" type="xs:string"/>
+                <xs:element name="test2" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:sequence>
+</xs:complexType>
+</xs:schema>
