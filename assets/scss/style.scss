@@ -1,0 +1,46 @@
+$primary: red;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+	font-family: 'Roboto', 'sans-serif';
+	padding: 50px;
+}
+
+.row {
+	margin: 0;
+}
+
+.indigo{
+	background-color: $indigo;
+}
+
+header, .navbar {
+	background-color: $indigo;
+}
+
+#nav-container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#logo {
+	width: 75px;
+}
+
+.navbar-brand {
+	padding: 0;
+	color: #FFF;
+}
+
+.navbar-brand:hover {
+	color: #FFF;
+}
+
+.navbar-links a {
+	color: #FFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding: 1rem, .8rem;
+}

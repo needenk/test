@@ -1,17 +1,64 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en" data-bs-theme="dark">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Test! </title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./assets/scss/style.css">
 </head>
-
 <body>
-	<p id="testParagraph"></p>
-	<script src="script.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script type="module" src="assets/js/load.js"></script>
+	<header>
+		<div class="container" id="nav-container">
+			<nav class="navbar navbar-expand-lg fixed-top">
+				<a href="#" class="navbar-brand">
+					<img id="logo" src="picture.jpg" alt="test"> test
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-links" 
+				aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+					<div class="navbar-nav">
+						<a class="nav-item nav-link" id="home-menu"> Home </a>
+						<a class="nav-item nav-link" id="about-menu"> About </a>
+						<a class="nav-item nav-link" id="contact-menu"> Contact </a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="container-sm overflow-hidden text-center">
+		<div class="row gx-6">
+			<div class="col">
+				<small> small text </small> 
+			</div>
+			<div class="col">
+				<div class="p-3"> text </div>
+			</div>
+		</div>
+		<div class="row gy-5"> 
+			<div class="col-6">
+				<p class="fw-bold"> bold text </p>
+			</div>
+			<div class="col">
+				text
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p id="testParagraph"></p>	
+			</div>	
+			<div class="col">
+				<img src="picture.jpg" class="img-fluid">
+			</div>
+		</div>
+	</div>
+	<div class="indigo">
+		<br>
+		<p class="text-success"> text success </p>
+		<p class="text-bg-secondary"> test </p>
+	</div>
 </body>
-
 </html>
